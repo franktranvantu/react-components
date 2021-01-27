@@ -36,6 +36,10 @@ class App extends Component {
     });
   }
 
+  incrementScore = (delta) => {
+    console.log(delta)
+  }
+
   render() {
     return (
       <div className="scoreboard">
@@ -51,7 +55,8 @@ class App extends Component {
             score={player.score}
             id={player.id}
             key={player.id.toString()} 
-            removePlayer={this.handleRemovePlayer}           
+            removePlayer={this.handleRemovePlayer}
+            incrementScore={this.incrementScore}
           />
         )}
       </div>
