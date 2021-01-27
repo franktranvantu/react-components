@@ -1,19 +1,12 @@
 import React from 'react';
-
-const Header = (props) => {
-  return (
-    <header>
-      <h1>{ props.title }</h1>
-      <span className="stats">Players: {props.totalPlayers}</span> 
-    </header>
-  );
-}
+import Header from "./Header";
+import Player from "./Player";
 
 class Counter extends React.Component {
-  state = { 
-    score: 0 
+  state = {
+    score: 0
   };
-  
+
   incrementScore = () => {
     this.setState( prevState => ({
       score: prevState.score + 1
@@ -35,19 +28,6 @@ class Counter extends React.Component {
       </div>
     );
   }
-}
-  
-const Player = (props) => {
-  return (
-    <div className="player">
-      <span className="player-name">
-        <button className="remove-player" onClick={() => props.removePlayer(props.id)}>✖</button>
-        { props.name }
-      </span>
-
-      <Counter />
-    </div>
-  );
 }
 
 class App extends React.Component {
