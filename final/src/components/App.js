@@ -48,7 +48,7 @@ class App extends Component {
   handleAddPlayer = (name) => {
     this.setState(prevState => {
       return {
-        frank: [
+        players: [
           ...prevState.players,
           {
             name,
