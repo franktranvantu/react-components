@@ -1,0 +1,1 @@
+Add a **Stats** functional component
