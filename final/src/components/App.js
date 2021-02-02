@@ -36,7 +36,7 @@ class App extends Component {
     });
   }
 
-  changeScore = (delta) => {
+  handleChangeScore = (delta) => {
     console.log(delta);
   }
 
@@ -56,7 +56,7 @@ class App extends Component {
             id={player.id}
             key={player.id.toString()} 
             removePlayer={this.handleRemovePlayer}
-            changeScore={this.changeScore}
+            changeScore={this.handleChangeScore}
           />
         )}
       </div>
