@@ -36,8 +36,8 @@ class App extends Component {
     });
   }
 
-  incrementScore = (delta) => {
-    console.log(delta)
+  changeScore = (delta) => {
+    console.log(delta);
   }
 
   render() {
@@ -56,7 +56,7 @@ class App extends Component {
             id={player.id}
             key={player.id.toString()} 
             removePlayer={this.handleRemovePlayer}
-            incrementScore={this.incrementScore}
+            changeScore={this.changeScore}
           />
         )}
       </div>

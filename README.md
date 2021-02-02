@@ -1,1 +1,1 @@
-We'll refactor the Counter's event handlers, and implement new props in the Player and Counter components that will act as callback functions.
+Refactor the **Counter's** event handlers, and implement new props in the **Player** and **Counter** components that will act as callback functions.
