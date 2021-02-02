@@ -1,0 +1,1 @@
+Update _handleChangeScore()_ function in **App** component
