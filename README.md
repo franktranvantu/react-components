@@ -1,7 +1,9 @@
-The stopwatch will have two main states visible to the user. 
+In this section, we'll use the componentDidMount() lifecycle method to make the stopwatch tick. 
 
-It will be either in a running state, or a stopped state. 
+React's built-in lifecycle methods get called at each point in a component's life-cycle. 
 
-The buttons on the interface should change based on the running state. 
+The methods act as hooks you can use to run code at key times in the life-cycle. 
 
-We'll start by initializing state in the Stopwatch component.
+This gives you the ability to control what happens when a component mounts, updates and unmounts.
+
+1. Create tick() function in Stopwatch component
