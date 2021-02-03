@@ -11,7 +11,13 @@ class Stopwatch extends Component {
     this.intervalId = setInterval(() => this.tick(), 100);
   }
 
+  componentWillUnmount() {
+    clearInterval(this.intervalId);
+    console.log("I've been cleared and unmounted");
+  }
+
   tick = () => {
+    console.log(this.state.elapsedTime);
     if (this.state.isRunning) {
       const now = Date.now();
       this.setState(prevState => ({
